@@ -29,23 +29,38 @@
 
 
 
-    <style type="text/tailwindcss">
-        @theme {
+        <style>
+            .color {
+              animation: colorChange 5s infinite;
+            }
+          
+            @keyframes colorChange {
+              0% {
+                color: #ffdc26;
+              }
+              50% {
+                color: #ff712f;
+              }
+              100% {
+                color: #ff9307;
+              }
+            }
 
-        --font-adlam: Manrope, serif;
-        --font-sora: Sora, serif;
-      --color-color: #da373d;
-
-            
-
-    }
-
-  </style>
+            body{
+                font-family: "Manrope", serif;
+            }
+          </style>
+          
+          
 
 
 </head>
 
+
+
 <body>
+
+    
 
     <div class="bg-[#FFF9F4]">
         <div class=" border-b-2 border-black md:border-b-0 lg:border-b-0">
@@ -96,7 +111,7 @@
     sm:bg-contain sm:bg-top sm:h-auto sm:min-h-[300px] md:h-[500px] xl:h-[700px] flex items-center">
 
         <div class="px-3 py-6 w-full sm:w-10/12 md:w-3/5">
-            <h1 class="adlam text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-medium">
+            <h1 class="color text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-medium">
                 Pamper Your Pet, <br> Because They Deserve <br> the Best
             </h1>
             <p class="mt-5 pe-14 md:pe-14 text-base sm:text-lg">
@@ -411,9 +426,9 @@
 
     </div>
 
-    <div class="w-full mx-auto mt-64 bg-[#f9df8a] h-[600px] relative">
+    <div class="w-full mx-auto mt-64 bg-[#f9df8a] h-[400px] relative" style="margin-top: 520px;">
         <div
-            class="bg-[#FFF9F4] w-9/12 h-12/12 md:9/12 absolute inset-0 m-auto -top-[400px] flex flex-col md:flex-row justify-center items-center text-center md:text-left space-y-3 md:space-y-4">
+            class="bg-[#FFF9F4] w-9/12 h-8/12 md:9/12 absolute inset-0 m-auto -top-[470px] flex flex-col md:flex-row justify-center items-center text-center md:text-left space-y-3 md:space-y-4" style="height: 640px;">
             <!-- Image Section -->
             <div>
                 <img src="c1-assets/cute-pet-mid.png" alt="">
@@ -438,7 +453,7 @@
 
     <div class="w-12/12 mx-auto bg-[#f9df8a] h-[250px]">
 
-        <div class="w-11/12 mx-auto bg-[#f9df8a] h-[200px] flex justify-around">
+        <div class="w-11/12 mx-auto bg-[#f9df8a] h-[200px] flex justify-around" style="padding: 50px 0;">
 
             <div class="flex">
                 <div>
@@ -480,6 +495,7 @@
 
 
     </div>
+
 
 
 
